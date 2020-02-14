@@ -19,6 +19,7 @@ Sub Desconto(ByVal rowTbDCad As Integer)
     If tbDCad.DataBodyRange.Cells(rowTbDCad, tbDCad.ListColumns("Desconto Fixo").Index).Value <> "" Then
         planInsPag.Range("InsPag_18") = tbDCad.DataBodyRange.Cells(rowTbDCad, tbDCad.ListColumns("Desconto Fixo").Index).Value
         planInsPag.Range("InsPag_19") = "(fixo)"
++        Exit Sub
     End If
 
 
